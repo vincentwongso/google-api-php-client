@@ -5,15 +5,21 @@
     "keywords": ["google"],
     "homepage": "http://developers.google.com/api-client-library/php",
     "license": "Apache-2.0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vincentwongso/google-auth-library-php"
+        }
+    ],
     "require": {
         "php": ">=5.4",
-        "google/auth": "0.8",
+        "google/auth": "dev-guzzle-psr7-support",
         "google/apiclient-services": "*@dev",
         "firebase/php-jwt": "~2.0|~3.0",
         "monolog/monolog": "^1.17",
         "phpseclib/phpseclib": "~2.0",
         "guzzlehttp/guzzle": "~5.2|~6.0",
-        "guzzlehttp/psr7": "^1.2"
+        "guzzlehttp/psr7": "~1.2|~1.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~4",
